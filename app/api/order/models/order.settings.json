@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "name": "Order"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Address": {
+      "type": "text"
+    },
+    "City": {
+      "type": "string"
+    },
+    "Dish": {
+      "type": "string"
+    },
+    "Amount": {
+      "type": "integer"
+    }
+  }
+}
