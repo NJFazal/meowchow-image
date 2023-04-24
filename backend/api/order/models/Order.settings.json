@@ -1,0 +1,46 @@
+{
+  "connection": "default",
+  "collectionName": "orders",
+  "info": {
+    "name": "order",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "dishes": {
+      "type": "json",
+      "required": true
+    },
+    "amount": {
+      "type": "biginteger"
+    },
+    "token": {
+      "type": "string"
+    },
+    "charge_id": {
+      "type": "string"
+    },
+    "user": {
+      "type": "string"
+    },
+    "city": {
+      "required": true,
+      "type": "text"
+    },
+    "address": {
+      "required": true,
+      "type": "text"
+    },
+    "state": {
+      "required": true,
+      "type": "text"
+    }
+  }
+}
